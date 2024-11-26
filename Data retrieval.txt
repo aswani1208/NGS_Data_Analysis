@@ -4,3 +4,23 @@
 
 sudo apt-get install sra-toolkit
 
+or
+
+# Download the file for ubuntu system
+
+wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.1.1/sratoolkit.3.1.1-ubuntu64.tar.gz
+
+# Unzip the archive
+
+tar -vxzf sratoolkit.tar.gz
+
+# Modify your .bashrc file
+
+export PATH=$PATH:$PWD/sratoolkit/bin
+
+# Verify that the binaries will be found by the shell
+
+which fastq-dump
+
+# Output : /Users/JoeUser/sratoolkit.3.0.0-mac64/bin/fastq-dump
+
