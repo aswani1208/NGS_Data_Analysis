@@ -62,3 +62,18 @@ unzip fastqc_v0.12.1.zip
 # Run fastQC
 
 /workspace/NGS_Data_Analysis/FastQC/fastqc SRR31448560_1.fastq.gz SRR31448560_2.fastq.gz
+
+### html files will be created for both the Read 1 and Read 2 data.It can be opened and viewed in any browsers.
+
+# Read Trimming - Trimmomatic, fastp, cutadapt to remove adapters
+# Install fastp
+
+wget http://opengene.org/fastp/fastp
+## wget http://opengene.org/fastp/fastp --no-check-certificate
+
+chmod a+x ./fastp
+
+# trimming reads
+
+/workspace/NGS_Data_Analysis/fastp -i SRR31448560_1.fastq.gz -I SRR31448560_2.fastq.gz \
+     -o SRR31448560_1_trimmed.fastq.gz -O SRR31448560_2_trimmed.fastq.gz
