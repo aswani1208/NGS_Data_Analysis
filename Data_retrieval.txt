@@ -44,4 +44,21 @@ prefetch SRR31448560
 # generate reads from pre-fetched download
 
 fastq-dump --split-files --gzip \
-    -X 10000 ERR2090226/ERR2090226.sra
+    -X 10000 SRR31448560/SRR31448560.sra
+
+### --split-files will split the paired data as two files
+### --gzip will compress the file
+### -x 10000 will include only the first 10000 reads
+
+# READ QC using FASTQC
+# install FASTQC
+
+wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.12.1.zip
+
+# Unzip the archive
+
+unzip fastqc_v0.12.1.zip
+
+# Run fastQC
+
+/workspace/NGS_Data_Analysis/FastQC/fastqc SRR31448560_1.fastq.gz SRR31448560_2.fastq.gz
