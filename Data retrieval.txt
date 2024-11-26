@@ -1,0 +1,6 @@
+
+
+# install SRA tool kit to download the data
+
+sudo apt-get install sra-toolkit
+
