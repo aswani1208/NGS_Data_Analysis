@@ -40,3 +40,8 @@ which fastq-dump
 mkdir sra_data
 cd sra_data
 prefetch SRR31448560  
+
+# generate reads from pre-fetched download
+
+fastq-dump --split-files --gzip \
+    -X 10000 ERR2090226/ERR2090226.sra
