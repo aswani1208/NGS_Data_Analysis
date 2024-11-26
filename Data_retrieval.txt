@@ -1,0 +1,42 @@
+
+
+# install SRA tool kit to download the data
+
+sudo apt-get install sra-toolkit
+
+# configure SRA toolkit to save in current directory
+
+vdb-config -i
+
+### Note: Select tools option using tab and choose current directory to save files (up and down key)
+
+or
+
+# Download the file for ubuntu system
+
+wget --output-document sratoolkit.tar.gz https://ftp-trace.ncbi.nlm.nih.gov/sra/sdk/3.1.1/sratoolkit.3.1.1-ubuntu64.tar.gz
+
+# Unzip the archive
+
+tar -vxzf sratoolkit.tar.gz
+
+# Modify your .bashrc file
+
+export PATH=$PATH:$PWD/sratoolkit/bin
+
+# Verify that the binaries will be found by the shell
+
+which fastq-dump
+
+### Output : /Users/JoeUser/sratoolkit.3.0.0-mac64/bin/fastq-dump
+
+
+
+# downloading data
+# select an accession id from sra
+# example SRR31448560	
+# gather data using prefetch (WGS Staphylococcus aureus)
+
+mkdir sra_data
+cd sra_data
+prefetch SRR31448560  
