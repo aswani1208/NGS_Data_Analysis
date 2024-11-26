@@ -4,6 +4,12 @@
 
 sudo apt-get install sra-toolkit
 
+# configure SRA toolkit to save in current directory
+
+vdb-config -i
+
+Note: Select tools option using tab and choose current directory to save files (up and down key)
+
 or
 
 # Download the file for ubuntu system
@@ -22,5 +28,5 @@ export PATH=$PATH:$PWD/sratoolkit/bin
 
 which fastq-dump
 
-# Output : /Users/JoeUser/sratoolkit.3.0.0-mac64/bin/fastq-dump
+Output : /Users/JoeUser/sratoolkit.3.0.0-mac64/bin/fastq-dump
 
