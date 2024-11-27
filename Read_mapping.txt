@@ -17,3 +17,10 @@ gunzip chr1.fa.gz
 git clone https://github.com/lh3/bwa.git
 cd bwa
 make
+
+# Build index
+
+cd reference_genome
+/workspace/NGS_Data_Analysis/bwa/bwa index chr1.fa
+
+
