@@ -34,17 +34,17 @@ which fastq-dump
 
 # downloading data
 # select an accession id from sra
-# example SRR31448560	
-# gather data using prefetch (WGS Staphylococcus aureus)
+# example SRR21019393	
+# gather data using prefetch (WGS Homo sapiens)
 
 mkdir sra_data
 cd sra_data
-prefetch SRR31448560  
+prefetch SRR21019393  
 
 # generate reads from pre-fetched download
 
 fastq-dump --split-files --gzip \
-    -X 10000 SRR31448560/SRR31448560.sra
+    -X 10000 SRR21019393/SRR21019393.sra
 
 ### --split-files will split the paired data as two files
 ### --gzip will compress the file
@@ -62,7 +62,7 @@ unzip /workspace/NGS_Data_Analysis/fastqc_v0.12.1.zip
 
 # Run fastQC
 
-/workspace/NGS_Data_Analysis/FastQC/fastqc SRR31448560_1.fastq.gz SRR31448560_2.fastq.gz
+/workspace/NGS_Data_Analysis/FastQC/fastqc SRR21019393_1.fastq.gz SRR21019393_2.fastq.gz
 
 ### html files will be created for both the Read 1 and Read 2 data.It can be opened and viewed in any browsers.
 
@@ -76,5 +76,5 @@ chmod a+x /workspace/NGS_Data_Analysis/fastp
 
 # trimming reads
 
-/workspace/NGS_Data_Analysis/fastp -i SRR31448560_1.fastq.gz -I SRR31448560_2.fastq.gz \
-     -o SRR31448560_1_trimmed.fastq.gz -O SRR31448560_2_trimmed.fastq.gz
+/workspace/NGS_Data_Analysis/fastp -i SRR21019393_1.fastq.gz -I SRR21019393_2.fastq.gz \
+     -o SRR21019393_1_trimmed.fastq.gz -O SRR21019393_2_trimmed.fastq.gz
