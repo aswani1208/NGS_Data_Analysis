@@ -1,0 +1,13 @@
+
+### Download reference genome and perform read mapping ###
+
+mkdir reference_genome
+cd reference_genome
+
+# ref genome data
+# go to UCSC genome browser and download genome by chromosome
+
+# Download chromosome 1 genome
+
+wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
+gunzip chr1.fa.gz
