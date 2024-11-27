@@ -11,3 +11,9 @@ cd reference_genome
 
 wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
 gunzip chr1.fa.gz
+
+# install bwa
+
+git clone https://github.com/lh3/bwa.git
+cd bwa
+make
