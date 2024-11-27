@@ -12,4 +12,7 @@ https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 https://github.com/OpenGene/fastp
 
+### Refrence Genome for chr 1 - UCSC 
+
+ https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
 
