@@ -23,4 +23,10 @@ make
 cd reference_genome
 /workspace/NGS_Data_Analysis/bwa/bwa index chr1.fa
 
+# mapping the reads
 
+mkdir read_mapping
+
+/workspace/NGS_Data_Analysis/bwa/bwa mem -t 5  \
+    reference_genome/chr1.fa sra_data/SRR21019393_1_trimmed.fastq.gz sra_data/SRR21019393_2_trimmed.fastq.gz \
+    > read_mapping/sample1.sam
