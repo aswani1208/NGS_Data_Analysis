@@ -16,3 +16,6 @@ https://github.com/OpenGene/fastp
 
  https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
 
+### BWA
+
+https://github.com/lh3/bwa
