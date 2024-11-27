@@ -53,11 +53,12 @@ fastq-dump --split-files --gzip \
 # READ QC using FASTQC
 # install FASTQC
 
-wget https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.12.1.zip
+
+wget -P /workspace/NGS_Data_Analysis https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.12.1.zip
 
 # Unzip the archive
 
-unzip fastqc_v0.12.1.zip
+unzip /workspace/NGS_Data_Analysis/fastqc_v0.12.1.zip
 
 # Run fastQC
 
@@ -68,10 +69,10 @@ unzip fastqc_v0.12.1.zip
 # Read Trimming - Trimmomatic, fastp, cutadapt to remove adapters
 # Install fastp
 
-wget http://opengene.org/fastp/fastp
+wget -P /workspace/NGS_Data_Analysis http://opengene.org/fastp/fastp
 ## wget http://opengene.org/fastp/fastp --no-check-certificate
 
-chmod a+x ./fastp
+chmod a+x /workspace/NGS_Data_Analysis/fastp
 
 # trimming reads
 
