@@ -13,13 +13,14 @@ wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
 gunzip chr1.fa.gz
 
 # install bwa
-
+cd ..
 git clone https://github.com/lh3/bwa.git
 cd bwa
 make
 
 # Build index
 
+cd ..
 cd reference_genome
 /workspace/NGS_Data_Analysis/bwa/bwa index chr1.fa
 
