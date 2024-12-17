@@ -66,4 +66,6 @@ samtools view -L reference_genome/bed_file2.bed read_mapping/merged_sorted.bam -
 gatk BaseRecalibrator -I read_mapping/chr1_bamfile.bam -R reference_genome/chr1.fa --known-sites read_mapping/Homo_sapiens_assembly38.dbsnp138.vcf -O recal_data.table
 
 gatk ApplyBQSR -R reference_genome/chr1.fa -I read_mapping/chr1_bamfile.bam --bqsr-recal-file recal_data.table -O read_mapping/chr1_bqsr.bam
+
+# Index bam file
 samtools index read_mapping/chr1_bqsr.bam
