@@ -31,6 +31,7 @@ https://gatk.broadinstitute.org/hc/en-us/articles 360035894731-Somatic-short-var
 ### Path to download normal and tumor data
 
 gatk-tutorials/workshop_2002/3-somatic/bams
+
 https://storage.googleapis.com/gatk-tutorials/workshop_2002/3-somatic/bams/normal.bam
 https://storage.googleapis.com/gatk-tutorials/workshop_2002/3-somatic/bams/tumor.bam
 
