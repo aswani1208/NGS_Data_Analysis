@@ -105,7 +105,7 @@ gatk CombineGVCFs \
 
 gatk  GenotypeGVCFs \
    -R reference_genome/Homo_sapiens_assembly38.fasta \
-   -V variant_calling/germline_variants/cohort.g.vcf.gz
+   -V variant_calling/germline_variants/cohort.g.vcf.gz \
    -O variant_calling/germline_variants/germline_variants.vcf.gz
 
 # hard filtering on snps
@@ -126,5 +126,21 @@ gatk CollectVariantCallingMetrics \
     -SD reference_genome/Homo_sapiens_assembly38.dict \
     -O variant_calling/germline_variants/germline_snps_metrics
 
-# implementations and testing
-check: https://hpc.nih.gov/training/gatk_tutorial/haplotype-caller.html
+# hard filtering on Indels
+
+gatk SelectVariants \
+    -V variant_calling/germline_variants/germline_variants.vcf.gz \
+    -select-type INDEL \
+    -O variant_calling/germline_variants/germline_indel.vcf.gz
+
+gatk VariantFiltration \
+    -V variant_calling/germline_variants/germline_indel.vcf.gz \
+    -filter "QD < 2.0" --filter-name "QD2" \
+    -filter "QUAL < 30.0" --filter-name "QUAL30" \
+    -O variant_calling/germline_variants/indel_filtered.vcf.gz
+
+gatk CollectVariantCallingMetrics \
+    -I variant_calling/germline_variants/indel_filtered.vcf.gz \
+    --DBSNP read_mapping/Homo_sapiens_assembly38.dbsnp138.vcf \
+    -SD reference_genome/Homo_sapiens_assembly38.dict \
+    -O variant_calling/germline_variants/germline_indel_metrics
