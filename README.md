@@ -26,7 +26,7 @@ https://hub.docker.com/r/broadinstitute/gatk/tags
 
 ### GATK
 
-https://gatk.broadinstitute.org/hc/en-us/articles 360035894731-Somatic-short-variant-discovery-SNVs-
+https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels
 
 ### Path to download normal and tumor data
 
