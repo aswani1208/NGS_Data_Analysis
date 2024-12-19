@@ -12,7 +12,7 @@ https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
 https://github.com/OpenGene/fastp
 
-### Refrence Genome for chr 1 - UCSC 
+### Reference Genome for chr 1 - UCSC 
 
  https://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
 
@@ -40,3 +40,7 @@ https://storage.googleapis.com/gatk-tutorials/workshop_2002/3-somatic/bams/tumor
 
 https://storage.googleapis.com/gcp-public-data--broad-references/hg38/v0/Homo_sapiens_assembly38.dbsnp138.vcf
 
+
+### implementations and testing
+
+check: https://hpc.nih.gov/training/gatk_tutorial/haplotype-caller.html
