@@ -69,6 +69,9 @@ gatk SelectVariants \
     --select-type-to-include INDEL \
     -O variant_calling/somatic_variants/filtered_indels.vcf
 
+# Reading VCF files
+bcftools view variant_calling/somatic_variants/filtered_snps.vcf
+bcftools view variant_calling/somatic_variants/filtered_indels.vcf
 
 ######### GERMLINE VARIANT DISCOVERY ###########
 Steps:
