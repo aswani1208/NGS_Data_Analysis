@@ -74,7 +74,7 @@ gatk SelectVariants \
 bcftools view variant_calling/somatic_variants/filtered_snps.vcf
 bcftools view variant_calling/somatic_variants/filtered_indels.vcf
 
-######### GERMLINE VARIANT DISCOVERY ###########
+# GERMLINE VARIANT DISCOVERY #
 Steps:
 1. haplotype caller - GVCFs is generated
 2. combine GVCFs
@@ -122,6 +122,11 @@ gatk VariantFiltration \
     -V variant_calling/germline_variants/germline_snps.vcf.gz \
     -filter "QD < 2.0" --filter-name "QD2" \
     -filter "QUAL < 30.0" --filter-name "QUAL30" \
+    -filter "SOR > 3.0" --filter-name "SOR3" \
+    -filter "FS > 60.0" --filter-name "FS60" \
+    -filter "MQ < 40.0" --filter-name "MQ40" \
+    -filter "MQRankSum < -12.5" --filter-name "MQRankSum-12.5" \
+    -filter "ReadPosRankSum < -8.0" --filter-name "ReadPosRankSum-8" \
     -O variant_calling/germline_variants/snps_filtered.vcf.gz
 
 gatk CollectVariantCallingMetrics \
@@ -141,6 +146,8 @@ gatk VariantFiltration \
     -V variant_calling/germline_variants/germline_indel.vcf.gz \
     -filter "QD < 2.0" --filter-name "QD2" \
     -filter "QUAL < 30.0" --filter-name "QUAL30" \
+    -filter "FS > 200.0" --filter-name "FS200" \
+    -filter "ReadPosRankSum < -20.0" --filter-name "ReadPosRankSum-20" \ 
     -O variant_calling/germline_variants/indel_filtered.vcf.gz
 
 gatk CollectVariantCallingMetrics \
