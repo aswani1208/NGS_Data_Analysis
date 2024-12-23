@@ -31,14 +31,14 @@ DNA variants
 
 - Large structutal variants: Alteration that cause changes in the structure, orgnaisation or arrangement of larger DNA segments.
 
-a. Inversions: Genetic rearrangement where a segment of DNA is reversed in orientation within the chromosome with two breakpoints.
+    a. Inversions: Genetic rearrangement where a segment of DNA is reversed in orientation within the chromosome with two breakpoints.
 
-b. Translocation: Rearrangement of genetic material between non-homologous chromosomes
+    b. Translocation: Rearrangement of genetic material between non-homologous chromosomes
 
-c. Repeat expansions: Increase in the number of repeating DNA sequence within a gene.
+    c. Repeat expansions: Increase in the number of repeating DNA sequence within a gene.
 
 - Copy number variations (CNV): Genetic alteration that involve the duplication or deletion of segments of DNA (>50 bases), resulting in changes in copy number of specific regions of the genome.
 
-a. Amplification: increase in the number of copies of a specific genetic sequence within the DNA. 
+   a. Amplification: increase in the number of copies of a specific genetic sequence within the DNA. 
 
-b. Deletion: Loss of a portion of a DNA segment, resulting in fewer copies of specific genetic sequence.
+   b. Deletion: Loss of a portion of a DNA segment, resulting in fewer copies of specific genetic sequence.
