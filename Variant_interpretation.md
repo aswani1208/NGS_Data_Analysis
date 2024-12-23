@@ -5,7 +5,15 @@
 - These variations cause diversity among individuals in genotype and phenotype.
 - These genetic variations can be further interpreted based on their consequences on mRNA and protein level.
 
-![alt text](image.png)
+
+DNA variants 
+   1. Nucleotide level:
+         - Single nucleotide variants
+         - Small indels : Insertions, Deletions, Substitutions
+   2. Chromosomal level:
+         - Aneuploidies
+         - Structural variants : Transloactions, Repeats, Inversions
+         - Copy number variants: Amplifications (gain), Deletions (loss)
 
 #### Types of genetic variants
 
