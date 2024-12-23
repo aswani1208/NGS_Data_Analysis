@@ -42,3 +42,51 @@ DNA variants
    a. Amplification: increase in the number of copies of a specific genetic sequence within the DNA. 
 
    b. Deletion: Loss of a portion of a DNA segment, resulting in fewer copies of specific genetic sequence.
+
+
+#### Variant effect on mRNA
+
+DNA sequence of a gene are transcribed to produce mRNA and the codons in the mRNA are transalated into a polypeptide chain. 
+
+RNA variations
+
+- RNA substitution
+  
+  -  Missense/Nonsynonymous variants : Variation that changes one amino acid to naother in a portein.
+
+  -  Nonsense/stop gain variants: Variation that converts regulat codon into a stop codon, leading to premature protein termination.
+
+  -  Synonymous/Silent variants : Variation that doesn't alter the encoded aino acid, mostly occur at 3rd position of the codon, s these nucleotides are redundant.
+
+  -  Start loss varinats : Variation prevents the  transalation intiation at the usual start codon 
+
+  -  Stop loss variants: Variation that prevents the termination of transalation, resulting in longer protein.
+
+- RNA deletion
+  
+  - In-frame deletion : Deletion of nucleotide that maintains the reading frame of a gene, usually three or multiple of three nucleotides are changed.
+
+  - Frameshift deletions: Deletion of nucleotides that alter the reading frame, often causing nonfunctional protein.
+
+- RNA insertion
+  
+  - In-frame insertions : Addition of nucleotides that maintain the reading frame of gene, usually three or multiple of three nucleotides are changed.
+
+  - Frameshift insertions : Addition of nucleotide that disrupts the reading frame, typically leading to nonfunctional protein.
+
+  #### Variant nomeclature
+
+  - standard used to describe the variations found in DNA, RNA, Protein , which is set by Human Genome Variation Society (HGVS). 
+  - The standard comprises of three elements
+     - Reference sequence
+     - Description of variant, location in coding sequence or genome 
+     - Predicted consequences 
+Example: NM-004006.2:c.4375C>T p.(Arg1459*), results in truncated nonfunctional protein.
+
+- NM-004006.2: Refernce sequence in Genbank,"NM" for mRNA sequence, "NR" for non-coding RNA sequence.
+- c.4375C>T : Describe variant, indicating change at the nucleotide level, specifically at the coding sequence at position 4375 from C(cytosine) to a T(Thymine). "c" is the coding DNA refernce sequence, "g" is geneome reference sequence, "n" non-coding regions.
+- p.(Arg1459*) : Predicted effect at the protein level as being stop codon (*) at position 1459 in the arginine.
+
+#### Check the variant validity
+
+https://www.variantvalidator.org/
