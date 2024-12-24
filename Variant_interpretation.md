@@ -90,3 +90,19 @@ Example: NM-004006.2:c.4375C>T p.(Arg1459*), results in truncated nonfunctional 
 #### Check the variant validity
 
 https://www.variantvalidator.org/
+
+#### Variant Interpretation
+
+- When change occurs in the genome,it cause an impact on the function of the cell and in some cases can lead to disease.
+
+- Genetic variant interpretation use various sources of evidences to decide whether the chnage can be disease causing or not. Sometimes there won't be enough evidences and sometimes the disease is complex to make it difficult to interpret the variant.
+
+- NGS has made it possible to understand the variantions in the genome all at once.
+
+- Process of variant interpretation includes
+
+    a. Variant annotation : Gene Nomenclature and consequences
+
+    b. Variant prioritisation : Gene-disease association, Variant type, Sequence quality, Population frequency, Inheritance
+    
+    c. Variant classification and interpretation : Whether the variant support pathogenicity and whether the classification matches the clinical feature?
