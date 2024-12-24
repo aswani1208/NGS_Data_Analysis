@@ -101,8 +101,11 @@ https://www.variantvalidator.org/
 
 - Process of variant interpretation includes
 
-    a. Variant annotation : Gene Nomenclature and consequences
-
-    b. Variant prioritisation : Gene-disease association, Variant type, Sequence quality, Population frequency, Inheritance
+    a. Variant annotation : 
     
-    c. Variant classification and interpretation : Whether the variant support pathogenicity and whether the classification matches the clinical feature?
+    Process of adding information about the variant or a gene. For eg. Gene Nomenclature and consequences. More inforation withh be helpful to interpret the potential impact of a variant.
+
+    b. Variant prioritisation : Gene-disease association, Variant type, Sequence quality, Population frequency(Common vaiants are unlikely to cause a rare disease), Inheritance pattern (Two pathogenic alleles should be present in a recessive disorder, only one pathogenic allele will lead to a disease state in dominany disorder), potential impact ( genetic variant leads to protein change and disruption of function).
+
+    c. Variant classification and interpretation :
+    Whether the variant support pathogenicity is checked based on standardised guidelines for variant interpretation issued by The American College of Medical Genetics and Genomics (ACMG) and whether the classification matches the clinical feature?
