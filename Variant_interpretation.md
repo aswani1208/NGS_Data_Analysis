@@ -109,3 +109,5 @@ https://www.variantvalidator.org/
 
     c. Variant classification and interpretation :
     Whether the variant support pathogenicity is checked based on standardised guidelines for variant interpretation issued by The American College of Medical Genetics and Genomics (ACMG) and whether the classification matches the clinical feature?
+
+  - Diversity in the available public dataset is an important need to make accurate decisions on pathogenicity of variants. Representation from global population group is very important, as the genetic variant frequency differ in a population specific manner.
