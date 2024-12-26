@@ -86,10 +86,12 @@ Example: NM-004006.2:c.4375C>T p.(Arg1459*), results in truncated nonfunctional 
 - NM-004006.2: Refernce sequence in Genbank,"NM" for mRNA sequence, "NR" for non-coding RNA sequence.
 - c.4375C>T : Describe variant, indicating change at the nucleotide level, specifically at the coding sequence at position 4375 from C(cytosine) to a T(Thymine). "c" is the coding DNA refernce sequence, "g" is geneome reference sequence, "n" non-coding regions.
 - p.(Arg1459*) : Predicted effect at the protein level as being stop codon (*) at position 1459 in the arginine.
+- HGVS nomenclature is used for the variant with Matching annotation from NCBI and EBI (MANE)
 
 #### Check the variant validity
 
 https://www.variantvalidator.org/
+https://mutalyzer.nl/
 
 #### Variant Interpretation
 
@@ -111,3 +113,23 @@ https://www.variantvalidator.org/
     Whether the variant support pathogenicity is checked based on standardised guidelines for variant interpretation issued by The American College of Medical Genetics and Genomics (ACMG) and whether the classification matches the clinical feature?
 
   - Diversity in the available public dataset is an important need to make accurate decisions on pathogenicity of variants. Representation from global population group is very important, as the genetic variant frequency differ in a population specific manner.
+
+  #### ACMG/AMP guideline
+
+  American College of Medical Genetics and Genomics (ACMG) in 2015 published the guidelines for variant classification and interpretation. The latest guidelines werepublished in 2015. This guidelines are based on expert opinion and empirical data.
+
+
+- When to apply these guidelines?
+  
+  - Patients with suspected inherited (Mendelian) disorders.
+  - It will not be used for interpeting Somatic variant, pharmacogenomix(PGx) variants or variats in genes associated with multigenic non-Mendelian complex disorders.
+  - Variants with  established gene-disease association.
+  - Variants can be classified as 5 different categories based on clinical significance
+   
+    - Pathogenic
+    - Likely Pathogenic
+    - Variant of Uncertain Significance
+    - Likely Benign
+    - Benign
+  
+  - Variant which doesn't belong to the criteria of pathogenic or benign or the evidences are conflicting, the variant being classified as uncertain significance.
